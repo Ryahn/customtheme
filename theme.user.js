@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.1.11
+// @version      0.1.12
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
@@ -15,10 +15,18 @@
 // ==/UserScript==
 
 
-const images = ['https://public.b-cdn.net/static/101914.png', 'https://public.b-cdn.net/static/101918.png'];
+const images = [
+    'https://public.b-cdn.net/static/101914.png', //Pinguino47
+    'https://public.b-cdn.net/static/101918.png' //Pinguino47
+];
 //Get custom theme
 let newCSS = GM_getResourceText("customCSS");
 //Load theme
 GM_addStyle(newCSS);
-
-$('body').css({'background': 'linear-gradient(0deg, rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(' + images[Math.floor(Math.random() * images.length)] + ')'});
+GM_addStyle('body {\
+    background: #181a1d;\
+    background-color: #181a1d;\
+    background-size: cover;\
+    color: #ababab;\
+    background:linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(' + images[Math.floor(Math.random() * images.length)] + ');\
+}');
