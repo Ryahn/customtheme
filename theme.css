@@ -295,3 +295,8 @@ pre {
     border: 1px solid #a9a9a94a;
     border-radius: 0;
 }
+
+.imageSelect {
+    margin: 5px;
+    padding: 5px;
+}
