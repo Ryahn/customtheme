@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.2.11
+// @version      0.2.12
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
@@ -49,7 +49,6 @@ $(function() {
 
 // Create selection
 let s = $('<select id="imageSelect" class="imageSelect" />');
-s.prepend('<option/>');
 s.append($('<option>').attr({value: 'default', selected: 'selected'}).text('Default'));
 
 // Add images to selection
