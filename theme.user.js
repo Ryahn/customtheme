@@ -8,12 +8,14 @@
 // @match        *://*.multizone.pw/*
 // @updateURL    https://raw.githubusercontent.com/Ryahn/customtheme/master/theme.meta.js
 // @downloadURL  https://raw.githubusercontent.com/Ryahn/customtheme/master/theme.user.js
+// @supportURL   https://github.com/Ryahn/customtheme/issues
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
 
+    //Test
      let $head = $('head');
      let $last = $head.find('link[rel="stylesheet"]:last');
      let link = '<link rel="stylesheet" href="https://raw.githubusercontent.com/Ryahn/customtheme/master/theme.css" type="text/css">';
