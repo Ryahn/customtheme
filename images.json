@@ -1,10 +1,54 @@
 [
     {
         "name": "Pepe Mountain",
-        "url": "https://public.b-cdn.net/static/101918.png"
+        "url": "https://public.b-cdn.net/static/f95/101918.png"
     },
     {
         "name": "Pepe Street",
-        "url": "https://public.b-cdn.net/static/101914.png"
+        "url": "https://public.b-cdn.net/static/f95/101914.png"
+    },
+    {
+        "name": "Beach",
+        "url": "https://public.b-cdn.net/static/f95/beach.png"
+    },
+    {
+        "name": "Bridge w/ Dogs",
+        "url": "https://public.b-cdn.net/static/f95/bridgedog.png"
+    },
+    {
+        "name": "Denali",
+        "url": "https://public.b-cdn.net/static/f95/denali.png"
+    },
+    {
+        "name": "Forest",
+        "url": "https://public.b-cdn.net/static/f95/forest.png"
+    },
+    {
+        "name": "Misty Forest Dark",
+        "url": "https://public.b-cdn.net/static/f95/mistforestdark.png"
+    },
+    {
+        "name": "Misty Forest Light",
+        "url": "https://public.b-cdn.net/static/f95/mistforestlight.png"
+    },
+    {
+        "name": "Misty Forest Road",
+        "url": "https://public.b-cdn.net/static/f95/mistforestroad.png"
+    },
+    {
+        "name": "Misty Forest",
+        "url": "https://public.b-cdn.net/static/f95/mistyforest.png"
+    },
+    {
+        "name": "Mountains",
+        "url": "https://public.b-cdn.net/static/f95/mountains.png"
+    },
+    {
+        "name": "Red Forest",
+        "url": "https://public.b-cdn.net/static/f95/redforest.png"
+    },
+    {
+        "name": "Shore Line",
+        "url": "https://public.b-cdn.net/static/f95/shoreline.png"
     }
 ]
