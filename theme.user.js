@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.2.8
+// @version      0.2.9
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
@@ -21,21 +21,29 @@
 /* global $ */
 /* eslint-disable no-multi-spaces, curly */
 
-// Array of custom images
-// const images = [
-//     {
-//         "name": "Pepe Mountain",
-//         "url": "https://public.b-cdn.net/static/101918.png"
-//     },
-//     {
-//         "name": "Pepe Street",
-//         "url": "https://public.b-cdn.net/static/101914.png"
-//     }
-// ];
 $.getJSON('https://raw.githubusercontent.com/Ryahn/customtheme/master/images.json', {}, function(data) {
     GM_setValue('imageData', data);
+    if (!GM_getValue('clear')) {
+        location.reload();
+        GM_setValue('clear', true);
+    } else {
+        GM_setValue('clear', true);
+    }
 });
 const images = GM_getValue('imageData');
+
+$(window).load(function() {
+    if (!GM_getValue('clear')) {
+        location.reload();
+        GM_setValue('clear', true);
+    }
+});
+$(function() {
+    if (!GM_getValue('clear')) {
+        location.reload();
+        GM_setValue('clear', true);
+    }
+});
 
 // Create selection
 let s = $('<select id="imageSelect" class="imageSelect" />');
@@ -62,7 +70,7 @@ li1.html(b);
 $('#navbar > ul ').append(li1);
 
 // Check if we already have a saved selection else, set to a default one
-if (GM_getValue('image') == 'default' || !GM_getValue('image') || GM_getValue('image') == '' || GM_getValue('image') == null) {
+if (GM_getValue('image') == 'default') {
     $('body').css({
         'background': '#181a1d',
         'background-color': '#181a1d',
@@ -93,6 +101,7 @@ $('#imageSelect').change(function() {
 $('#clearCache').click(function() {
     GM_deleteValue('image');
     GM_deleteValue('imageData');
+    GM_deleteValue('clear');
     location.reload();
 });
 
