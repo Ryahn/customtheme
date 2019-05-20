@@ -61,7 +61,7 @@ if (GM_getValue('image')) {
     });
 } else {
     $('body').css({
-        'background': 'linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(https://public.b-cdn.net/static/101918.png)'
+        'background': '#181a1d'
     });
 }
 
