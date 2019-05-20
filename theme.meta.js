@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://github.com/Ryahn/customtheme
-// @version      0.1.9
+// @version      0.1.10
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
