@@ -1,68 +1,68 @@
 body {
-    background: #181a1d !important;
-    background-color: #181a1d !important;
+    background: #181a1d;
+    background-color: #181a1d;
     /* Choose the wallpaper by removing the comment tags, comment tags are the asterisk and slash at the start and the end of a line*/
     /* You can comment both to remove the wallpaper, or replace it with a picture of your own by changing the link */
-    /*background:linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(http://public.b-cdn.net/static/101918.png) !important; */
-    background: linear-gradient(0deg, rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(https://public.b-cdn.net/static/101914.png) !important;
-    background-size: cover !important;
-    color: #ababab !important;
+    /*background:linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(http://public.b-cdn.net/static/101918.png); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(https://public.b-cdn.net/static/101914.png);
+    background-size: cover;
+    color: #ababab;
 }
 h2 {
-    color: #ababab !important;
+    color: #ababab;
 }
 h3 {
-    color: #ababab !important;
+    color: #ababab;
 }
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
-    display: inline-block !important;
-    position: relative !important;
-    background-color: #555 !important;
-    color: #000 !important;
-    height: 15px !important;
-    width: 15px !important;
-    border: 0 !important;
-    cursor: pointer !important;
-    margin-right: 7px !important;
-    outline: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #555;
+    color: #000;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
 }
 .checkbox input[type="checkbox"]:checked::before {
-    position: absolute !important;
-    font: 13px/1 'Open Sans', sans-serif !important;
-    left: 4px !important;
-    top: 1px !important;
-    content: '\02143' !important;
-    transform: rotate(40deg) !important;
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 4px;
+    top: 1px;
+    content: '\02143';
+    transform: rotate(40deg);
 }
 .checkbox label input[type="checkbox"]:hover {
-    background-color: #bfbfbf !important;
+    background-color: #bfbfbf;
 }
 .checkbox label input[type="checkbox"]:checked {
-    background-color: #e8e8e8 !important;
+    background-color: #e8e8e8;
 }
 .checkbox label input[type="checkbox"]:disabled {
-    background-color: #939393 !important;
+    background-color: #939393;
 }
 .footable-header {
-    background: rgba(140, 28, 29, 0.7) !important;
-    color: #fff !important;
+    background: rgba(140, 28, 29, 0.7);
+    color: #fff;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
-    background: rgba(36, 38, 41, 0.5) !important;
-    color: #eee !important;
+    background: rgba(36, 38, 41, 0.5);
+    color: #eee;
 }
 .table > tbody > tr {
-    background: rgba(51, 51, 51, 0.5) !important;
-    color: #eee !important;
+    background: rgba(51, 51, 51, 0.5);
+    color: #eee;
 }
 .table > thead > tr > th {
-    border-bottom: 2px solid #444 !important;
+    border-bottom: 2px solid #444;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -70,109 +70,109 @@ h3 {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-    border-top: 1px solid #555 !important;
+    border-top: 1px solid #555;
 }
 .table-hover > tbody > tr:hover {
-    background-color: #777 !important;
+    background-color: #777;
 }
 .navbar-default {
-    background-color: #242629 !important;
+    background-color: #242629;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #3b3d40 !important;
+    background-color: #3b3d40;
 }
 .label-default {
-    background-color: #181a1d !important;
-    color: #eee !important;
+    background-color: #181a1d;
+    color: #eee;
 }
 
 .alert-info {
-    background: rgba(34, 34, 34, 0.5) !important;
+    background: rgba(34, 34, 34, 0.5);
 }
 .modal-content {
-    background: #242629 !important;
+    background: #242629;
 }
 .alert {
-    background: rgba(36, 38, 41, 0.5) !important;
+    background: rgba(36, 38, 41, 0.5);
 }
 .modal-header {
-    color: #fff !important;
+    color: #fff;
 }
 .modal-body {
-    color: #eee !important;
+    color: #eee;
 }
 .modal label {
-    color: #eee !important;
+    color: #eee;
 }
 .modal-footer {
-    border-top: 1px solid #888 !important;
+    border-top: 1px solid #888;
 }
 .nav-tabs {
-    border-bottom: 1px solid #555 !important;
+    border-bottom: 1px solid #555;
 }
 .nav-tabs > li > a {
-    background-color: #181a1d !important;
-    color: #888 !important;
+    background-color: #181a1d;
+    color: #888;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    color: #eee !important;
-    background-color: #181a1d !important;
-    border: 1px solid #555 !important;
+    color: #eee;
+    background-color: #181a1d;
+    border: 1px solid #555;
 }
 .nav-tabs > li > a:hover {
-    background-color: #212326 !important;
-    border-color: #2b2b2b !important;
+    background-color: #212326;
+    border-color: #2b2b2b;
 }
 .input-group-addon:last-child {
-    color: #eee !important;
+    color: #eee;
     background-color: #555
 }
 .form-control {
-    color: #eee !important;
-    background: rgba(36, 38, 41, 0.5) !important;
+    color: #eee;
+    background: rgba(36, 38, 41, 0.5);
 }
 .open > .dropdown-menu {
-    background-color: #242629 !important;
+    background-color: #242629;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    background-color: #333 !important;
+    background-color: #333;
 }
 
 .footable-filtering-external ul.dropdown-menu > li > a.checkbox > label,
 table.footable > thead > tr.footable-filtering > th ul.dropdown-menu > li > a.checkbox > label {
-    color: #eee !important;
+    color: #eee;
 }
 
 .fileuploader {
-    background: rgba(36, 38, 41, 0.5) !important;
-    border: 1px solid #555 !important;
+    background: rgba(36, 38, 41, 0.5);
+    border: 1px solid #555;
 }
 .fileuploader-input .fileuploader-input-caption {
-    background: rgba(44, 44, 44, 0.5) !important;
-    border: 1px solid #181a1d !important;
+    background: rgba(44, 44, 44, 0.5);
+    border: 1px solid #181a1d;
 }
 .fileuploader-input.fileuploader-dragging {
-    background: #2c2c2c !important;
-    border: 1px solid #181a1d !important;
+    background: #2c2c2c;
+    border: 1px solid #181a1d;
 }
 p {
-    color: #eee !important;
+    color: #eee;
 }
 
 .text-muted {
-    color: #eee !important;
+    color: #eee;
 }
 
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-    background-color: #242629 !important;
+    background-color: #242629;
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
@@ -180,7 +180,7 @@ p {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-    background-color: #000 !important;
+    background-color: #000;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -188,33 +188,33 @@ p {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-    background-color: #222428 !important;
+    background-color: #222428;
 }
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-    color: #ababab !important;
+    color: #ababab;
 }
 input[type="radio"],
 input[type="checkbox"] {
-    margin-top: 7px !important;
+    margin-top: 7px;
 }
 /* Search button */
 .btn-primary {
-    background: rgba(36, 38, 41, 0.5) !important;
-    border-color: #eee !important;
+    background: rgba(36, 38, 41, 0.5);
+    border-color: #eee;
 }
 .btn-primary:hover {
-    color: #eee !important;
-    background-color: #555 !important;
-    border-color: #ccc !important;
+    color: #eee;
+    background-color: #555;
+    border-color: #ccc;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    background-color: #464646 !important;
-    border-color: #333 !important;
+    background-color: #464646;
+    border-color: #333;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -225,24 +225,24 @@ input[type="checkbox"] {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-    background-color: #464646 !important;
-    border-color: #333 !important;
+    background-color: #464646;
+    border-color: #333;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-    background-color: #464646 !important;
-    border-color: #333 !important;
+    background-color: #464646;
+    border-color: #333;
 }
 /* Button next the search button */
 .btn-default {
-    color: #eee !important;
-    background: rgba(36, 38, 41, 0.5) !important;
-    border-color: #ccc !important;
+    color: #eee;
+    background: rgba(36, 38, 41, 0.5);
+    border-color: #ccc;
 }
 .btn-default:hover {
-    color: #eee !important;
-    background-color: #555 !important;
-    border-color: #ccc !important;
+    color: #eee;
+    background-color: #555;
+    border-color: #ccc;
 }
 .btn-default:active:hover,
 .btn-default:focus,
@@ -255,26 +255,26 @@ input[type="checkbox"] {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-    background-color: #464646 !important;
-    color: #ababab !important;
-    border-color: #333 !important;
+    background-color: #464646;
+    color: #ababab;
+    border-color: #333;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    background-color: #464646 !important;
-    color: #ababab !important;
-    border-color: #333 !important;
+    background-color: #464646;
+    color: #ababab;
+    border-color: #333;
 }
 .btn-success {
-    color: #e6e6e6 !important;
-    background-color: #296f43 !important;
-    border-color: #296f43 !important;
+    color: #e6e6e6;
+    background-color: #296f43;
+    border-color: #296f43;
 }
 .btn-danger {
-    color: #e6e6e6 !important;
-    background-color: #b9341e !important;
-    border-color: #b9341e !important;
+    color: #e6e6e6;
+    background-color: #b9341e;
+    border-color: #b9341e;
 }
 
 .table > caption + thead > tr:first-child > th,
@@ -283,25 +283,25 @@ input[type="checkbox"] {
 .table > caption + thead > tr:first-child > td,
 .table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > td {
-    color: #ababab !important;
+    color: #ababab;
 }
 input,
 button,
 select,
 textarea {
-    color: #eee !important;
-    background-color: #444 !important;
+    color: #eee;
+    background-color: #444;
 }
 pre {
-    display: block !important;
-    padding: 10px !important;
-    margin: 0 0 10.5px !important;
-    font-size: 14px !important;
-    line-height: 1.4 !important;
-    color: #ababab !important;
-    word-break: break-all !important;
-    word-wrap: break-word !important;
-    background-color: #a9a9a94a !important;
-    border: 1px solid #a9a9a94a !important;
-    border-radius: 0 !important;
+    display: block;
+    padding: 10px;
+    margin: 0 0 10.5px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ababab;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #a9a9a94a;
+    border: 1px solid #a9a9a94a;
+    border-radius: 0;
 }
