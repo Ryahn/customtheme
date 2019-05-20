@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.2.2
+// @version      0.2.3
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
@@ -33,7 +33,7 @@
 //     }
 // ];
 $.getJSON('https://raw.githubusercontent.com/Ryahn/customtheme/master/images.json', {}, function(data) {
-    GM_deleteValue('imageData');
+    GM_deleteValue('imageData', data);
     GM_setValue('imageData', data);
 });
 const images = GM_getValue('imageData');
