@@ -1,0 +1,307 @@
+body {
+    background: #181a1d;
+    background-color: #181a1d;
+    /* Choose the wallpaper by removing the comment tags, comment tags are the asterisk and slash at the start and the end of a line*/
+    /* You can comment both to remove the wallpaper, or replace it with a picture of your own by changing the link */
+    /*background:linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(http://public.b-cdn.net/static/101918.png); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(https://public.b-cdn.net/static/101914.png);
+    background-size: cover;
+    color: #ababab;
+}
+h2 {
+    color: #ababab;
+}
+h3 {
+    color: #ababab;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #555;
+    color: #000;
+    height: 15px;
+    width: 15px;
+    border: 0;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+}
+.checkbox input[type="checkbox"]:checked::before {
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 4px;
+    top: 1px;
+    content: '\02143';
+    transform: rotate(40deg);
+}
+.checkbox label input[type="checkbox"]:hover {
+    background-color: #bfbfbf;
+}
+.checkbox label input[type="checkbox"]:checked {
+    background-color: #e8e8e8;
+}
+.checkbox label input[type="checkbox"]:disabled {
+    background-color: #939393;
+}
+.footable-header {
+    background: rgba(140, 28, 29, 0.7);
+    color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background: rgba(36, 38, 41, 0.5);
+    color: #eee;
+}
+.table > tbody > tr {
+    background: rgba(51, 51, 51, 0.5);
+    color: #eee;
+}
+.table > thead > tr > th {
+    border-bottom: 2px solid #444;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    border-top: 1px solid #555;
+}
+.table-hover > tbody > tr:hover {
+    background-color: #777;
+}
+.navbar-default {
+    background-color: #242629;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: #3b3d40;
+}
+.label-default {
+    background-color: #181a1d;
+    color: #eee;
+}
+
+.alert-info {
+    background: rgba(34, 34, 34, 0.5);
+}
+.modal-content {
+    background: #242629;
+}
+.alert {
+    background: rgba(36, 38, 41, 0.5);
+}
+.modal-header {
+    color: #fff;
+}
+.modal-body {
+    color: #eee;
+}
+.modal label {
+    color: #eee;
+}
+.modal-footer {
+    border-top: 1px solid #888;
+}
+.nav-tabs {
+    border-bottom: 1px solid #555;
+}
+.nav-tabs > li > a {
+    background-color: #181a1d;
+    color: #888;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #eee;
+    background-color: #181a1d;
+    border: 1px solid #555;
+}
+.nav-tabs > li > a:hover {
+    background-color: #212326;
+    border-color: #2b2b2b;
+}
+.input-group-addon:last-child {
+    color: #eee;
+    background-color: #555
+}
+.form-control {
+    color: #eee;
+    background: rgba(36, 38, 41, 0.5);
+}
+.open > .dropdown-menu {
+    background-color: #242629;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #333;
+}
+
+.footable-filtering-external ul.dropdown-menu > li > a.checkbox > label,
+table.footable > thead > tr.footable-filtering > th ul.dropdown-menu > li > a.checkbox > label {
+    color: #eee;
+}
+
+.fileuploader {
+    background: rgba(36, 38, 41, 0.5);
+    border: 1px solid #555;
+}
+.fileuploader-input .fileuploader-input-caption {
+    background: rgba(44, 44, 44, 0.5);
+    border: 1px solid #181a1d;
+}
+.fileuploader-input.fileuploader-dragging {
+    background: #2c2c2c;
+    border: 1px solid #181a1d;
+}
+p {
+    color: #eee;
+}
+
+.text-muted {
+    color: #eee;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    background-color: #242629;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+    background-color: #000;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #222428;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    color: #ababab;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 7px;
+}
+/* Search button */
+.btn-primary {
+    background: rgba(36, 38, 41, 0.5);
+    border-color: #eee;
+}
+.btn-primary:hover {
+    color: #eee;
+    background-color: #555;
+    border-color: #ccc;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-color: #464646;
+    border-color: #333;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+    background-color: #464646;
+    border-color: #333;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+    background-color: #464646;
+    border-color: #333;
+}
+/* Button next the search button */
+.btn-default {
+    color: #eee;
+    background: rgba(36, 38, 41, 0.5);
+    border-color: #ccc;
+}
+.btn-default:hover {
+    color: #eee;
+    background-color: #555;
+    border-color: #ccc;
+}
+.btn-default:active:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+    background-color: #464646;
+    color: #ababab;
+    border-color: #333;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-color: #464646;
+    color: #ababab;
+    border-color: #333;
+}
+.btn-success {
+    color: #e6e6e6;
+    background-color: #296f43;
+    border-color: #296f43;
+}
+.btn-danger {
+    color: #e6e6e6;
+    background-color: #b9341e;
+    border-color: #b9341e;
+}
+
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+    color: #ababab;
+}
+input,
+button,
+select,
+textarea {
+    color: #eee;
+    background-color: #444;
+}
+pre {
+    display: block;
+    padding: 10px;
+    margin: 0 0 10.5px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ababab;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #a9a9a94a;
+    border: 1px solid #a9a9a94a;
+    border-radius: 0;
+}
