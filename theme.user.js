@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.2.6
+// @version      0.2.7
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
