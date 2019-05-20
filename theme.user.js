@@ -6,8 +6,8 @@
 // @author       Ryahn
 // @contributor  Ryahn
 // @match        *://*.multizone.pw/*
-// @updateURL    https://github.com/Ryahn/customtheme/raw/master/theme.meta.js
-// @downloadURL  https://github.com/Ryahn/customtheme/raw/master/theme.user.js
+// @updateURL    https://raw.githubusercontent.com/Ryahn/customtheme/master/theme.meta.js
+// @downloadURL  https://raw.githubusercontent.com/Ryahn/customtheme/master/theme.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -16,7 +16,7 @@
 
      let $head = $('head');
      let $last = $head.find('link[rel="stylesheet"]:last');
-     let link = '<link rel="stylesheet" href="https://github.com/Ryahn/customtheme/raw/master/theme.css" type="text/css">';
+     let link = '<link rel="stylesheet" href="https://raw.githubusercontent.com/Ryahn/customtheme/master/theme.css" type="text/css">';
 
      if ($last.length) {
          $last.after(link);
