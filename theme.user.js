@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.2.9
+// @version      0.2.10
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
@@ -52,7 +52,11 @@ s.append($('<option>').attr('value', 'default').text('Default'));
 
 // Add images to selection
 $(images).each(function() {
-    s.append($('<option>').attr('value', this.url).text(this.name));
+    if(GM_getValue('image') == $(this).val()) {
+        s.append($('<option>').attr({value: this.url, selected: 'selected'}).text(this.name));
+    } else {
+        s.append($('<option>').attr('value', this.url).text(this.name));
+    }
 });
 
 // Create list item to append to navbar
