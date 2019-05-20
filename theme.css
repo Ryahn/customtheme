@@ -63,7 +63,7 @@ h3 {
     border-top: 1px solid #555;
 }
 .table-hover > tbody > tr:hover {
-    background-color: #777;
+    background: rgba(119,119,119, 0.6);
 }
 .navbar-default {
     background-color: #242629;
@@ -197,13 +197,13 @@ input[type="checkbox"] {
 }
 .btn-primary:hover {
     color: #eee;
-    background-color: #555;
+    background: rgba(85, 85, 85, 0.5);
     border-color: #ccc;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    background-color: #464646;
+    background: rgba(70, 70, 70, 0.8);
     border-color: #333;
 }
 .btn-primary:active:hover,
@@ -215,12 +215,12 @@ input[type="checkbox"] {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-    background-color: #464646;
+    background: rgba(70, 70, 70, 0.8);
     border-color: #333;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-    background-color: #464646;
+    background: rgba(70, 70, 70, 0.8);
     border-color: #333;
 }
 /* Button next the search button */
@@ -231,7 +231,7 @@ input[type="checkbox"] {
 }
 .btn-default:hover {
     color: #eee;
-    background-color: #555;
+    background: rgba(85, 85, 85, 0.5);
     border-color: #ccc;
 }
 .btn-default:active:hover,
@@ -245,14 +245,14 @@ input[type="checkbox"] {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-    background-color: #464646;
+    background: rgba(70, 70, 70, 0.8);
     color: #ababab;
     border-color: #333;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    background-color: #464646;
+    background: rgba(70, 70, 70, 0.8);
     color: #ababab;
     border-color: #333;
 }
