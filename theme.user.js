@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.2.10
+// @version      0.2.11
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
@@ -24,10 +24,12 @@
 $.getJSON('https://raw.githubusercontent.com/Ryahn/customtheme/master/images.json', {}, function(data) {
     GM_setValue('imageData', data);
     if (!GM_getValue('clear')) {
+        GM_setValue('image', 'default');
         location.reload();
         GM_setValue('clear', true);
     } else {
         GM_setValue('clear', true);
+        GM_setValue('image', 'default');
     }
 });
 const images = GM_getValue('imageData');
@@ -48,16 +50,18 @@ $(function() {
 // Create selection
 let s = $('<select id="imageSelect" class="imageSelect" />');
 s.prepend('<option/>');
-s.append($('<option>').attr('value', 'default').text('Default'));
+s.append($('<option>').attr({value: 'default', selected: 'selected'}).text('Default'));
 
 // Add images to selection
-$(images).each(function() {
-    if(GM_getValue('image') == $(this).val()) {
-        s.append($('<option>').attr({value: this.url, selected: 'selected'}).text(this.name));
-    } else {
-        s.append($('<option>').attr('value', this.url).text(this.name));
-    }
-});
+
+    $(images).each(function() {
+        if(GM_getValue('image') == this.url) {
+            s.append($('<option>').attr({value: this.url, selected: 'selected'}).text(this.name));
+        } else {
+            s.append($('<option>').attr('value', this.url).text(this.name));
+        }
+    });
+
 
 // Create list item to append to navbar
 let li = $('<li/>');
@@ -99,6 +103,7 @@ $('#imageSelect').change(function() {
             'background': 'linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(' + $(this).val() + ')',
             'background-size': 'cover',
         });
+        location.reload();
     }
 });
 
