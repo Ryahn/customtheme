@@ -1,11 +1,11 @@
 [
     {
-        "name": "Pepe Mountain",
-        "url": "https://public.b-cdn.net/static/f95/101918.png"
+        "name": "2B Long Sword",
+        "url": "https://public.b-cdn.net/static/f95/2blongsword.jpg"
     },
     {
-        "name": "Pepe Street",
-        "url": "https://public.b-cdn.net/static/f95/101914.png"
+        "name": "Aerial Seaside",
+        "url": "https://public.b-cdn.net/static/f95/AerialSeaside.jpg"
     },
     {
         "name": "Beach",
@@ -44,12 +44,28 @@
         "url": "https://public.b-cdn.net/static/f95/mountains.jpg"
     },
     {
+        "name": "Orange Lake",
+        "url": "https://public.b-cdn.net/static/f95/OrangeLake.png"
+    },
+    {
+        "name": "Pepe Mountain",
+        "url": "https://public.b-cdn.net/static/f95/101918.png"
+    },
+    {
+        "name": "Pepe Street",
+        "url": "https://public.b-cdn.net/static/f95/101914.png"
+    },
+    {
         "name": "Red Forest",
         "url": "https://public.b-cdn.net/static/f95/redforest.jpg"
     },
     {
         "name": "Shore Line",
         "url": "https://public.b-cdn.net/static/f95/shoreline.jpg"
+    },
+    {
+        "name": "Snow Mountains",
+        "url": "https://public.b-cdn.net/static/f95/SnowMountains.jpg"
     },
     {
         "name": "FurryZone",
