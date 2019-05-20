@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.2.5
+// @version      0.2.6
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
@@ -33,7 +33,6 @@
 //     }
 // ];
 $.getJSON('https://raw.githubusercontent.com/Ryahn/customtheme/master/images.json', {}, function(data) {
-    GM_deleteValue('imageData', data);
     GM_setValue('imageData', data);
 });
 const images = GM_getValue('imageData');
@@ -41,6 +40,7 @@ const images = GM_getValue('imageData');
 // Create selection
 let s = $('<select id="imageSelect" class="imageSelect" />');
 s.prepend('<option/>');
+s.append($('<option>').attr('value', 'default').text('Default'));
 
 // Add images to selection
 $(images).each(function() {
@@ -54,24 +54,45 @@ li.html(s);
 // Append selection to navbar
 $('#navbar > ul ').append(li);
 
+let b = $('<button/>').attr({id: 'clearCache', class: 'btn btn-danger clearCache'}).text('Clear Cache');
+let li1 = $('<li/>');
+li1.html(b);
+
+// Append selection to navbar
+$('#navbar > ul ').append(li1);
+
 // Check if we already have a saved selection else, set to a default one
-if (GM_getValue('image')) {
+if (GM_getValue('image') == 'default' || !GM_getValue('image') || GM_getValue('image') == '' || GM_getValue('image') == null) {
     $('body').css({
-        'background': 'linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(' + GM_getValue('image') + ')'
+        'background': '#181a1d',
+        'background-color': '#181a1d',
     });
 } else {
     $('body').css({
-        'background': '#181a1d'
+        'background': 'linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(' + GM_getValue('image') + ')'
     });
 }
 
 // Change background on selection and save to reuse
 $('#imageSelect').change(function() {
-    GM_setValue('image', $(this).val());
-    $('body').css({
-        'background': 'linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(' + $(this).val() + ')',
-        'background-size': 'cover',
-    });
+    if ($(this).val() === 'default') {
+        $('body').css({
+            'background': '#181a1d',
+            'background-color': '#181a1d',
+        });
+    } else {
+        GM_setValue('image', $(this).val());
+        $('body').css({
+            'background': 'linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(' + $(this).val() + ')',
+            'background-size': 'cover',
+        });
+    }
+});
+
+$('#clearCache').click(function() {
+    GM_deleteValue('image');
+    GM_deleteValue('imageData');
+    location.reload();
 });
 
 

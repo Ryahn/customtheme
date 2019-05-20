@@ -300,3 +300,10 @@ pre {
     margin: 5px;
     padding: 5px;
 }
+
+.clearCache {
+    padding: 1px;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
