@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Multi Theme
 // @namespace    https://upload.multizone.pw/*
-// @version      0.2.1
+// @version      0.2.2
 // @description  Custom theme
 // @author       Ryahn
 // @contributor  Ryahn
@@ -69,9 +69,11 @@ if (GM_getValue('image')) {
 $('#imageSelect').change(function() {
     GM_setValue('image', $(this).val());
     $('body').css({
-        'background': 'linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(' + $(this).val() + ')'
+        'background': 'linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(' + $(this).val() + ')',
+        'background-size': 'cover',
     });
 });
+
 
 //Get custom theme
 let newCSS = GM_getResourceText("customCSS");
