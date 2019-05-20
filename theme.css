@@ -4,7 +4,7 @@ body {
     /* Choose the wallpaper by removing the comment tags, comment tags are the asterisk and slash at the start and the end of a line*/
     /* You can comment both to remove the wallpaper, or replace it with a picture of your own by changing the link */
     /*background:linear-gradient(0deg,rgba(0, 0, 0, .56),rgba(0, 0, 0, .56)),url(http://public.b-cdn.net/static/101918.png); */
-    background: linear-gradient(0deg, rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(https://public.b-cdn.net/static/101914.png);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, .56), rgba(0, 0, 0, .56)), url(https://public.b-cdn.net/static/101914.png); */
     background-size: cover;
     color: #ababab;
 }
