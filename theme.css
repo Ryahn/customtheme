@@ -306,6 +306,9 @@ pre {
     margin-left: 10px;
     margin-top: 12px;
 }
+.fileuploader-items .fileuploader-item{
+    border-bottom: 1px solid #555;
+}
 .fileuploader-items .fileuploader-item .fileuploader-item-icon {
     border-radius: 0px;
 }
